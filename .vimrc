@@ -3,7 +3,8 @@ syntax on
 syntax sync fromstart
 set background=dark
 set t_Co=256
-colorscheme midnight2
+"colorscheme delek
+colorscheme ingretu
 
 set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more

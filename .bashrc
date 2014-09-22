@@ -9,7 +9,9 @@ alias ssh='TERM=xterm ssh -l dryack'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
+alias cd......='cd ../../../../..'
 alias ssh='prep.sh'
+alias 2kad='/usr/bin/ssh -l dryack -R 23053:localhost:23053 boyd.blegh.net'
 export HOMEBREW_GITHUB_API_TOKEN=5797cdf376cf9417b080465fd707950ca06177d1
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
