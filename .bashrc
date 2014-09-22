@@ -1,11 +1,16 @@
 PS1="\A \w/ \$ "
 PATH=/Users/daveryack/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:$PATH # Add RVM to PATH for scripting
 alias vi='vim -O'
+alias tailf='tail -f'
+alias tail10='tail -10'
+alias tail20='tail -20'
+alias tail40='tail -40'
+alias tail60='tail -60'
+alias tail80='tail -80'
 alias ls='ls -G'
 alias cls=clear
-alias ssh2admin='TERM=xterm ssh -l dryack admin-1.prod.urbanairship.com'
+alias ssh2admin='TERM=xterm ssh admin-1.prod.urbanairship.com'
 alias ll='ls -la'
-alias ssh='TERM=xterm ssh -l dryack'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
