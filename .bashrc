@@ -1,4 +1,8 @@
-PS1='\A \w/ ($(~/.rvm/bin/rvm-prompt)) \$ '
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+source ~/.bash_aliases
+source ~/git-prompt.sh
+PS1='|\A| '$Red'($(~/.rvm/bin/rvm-prompt))'$Color_Off'\n \w/'$Cyan'$(__git_ps1 " (%s)")'$Color_Off' \$ '
 PATH=/Users/daveryack/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:$PATH # Add RVM to PATH for scripting
 alias vi='vim -O'
 alias ls='ls -G'
