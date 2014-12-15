@@ -4,7 +4,7 @@ export EDITOR="vim"
 export VISUAL="$EDITOR"
 export LANG="en_US.UTF-8"
 export LC_CALL="en_US.UTF-8"
-export TERM=xterm-256-color
+export TERM=xterm-256color
 
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
