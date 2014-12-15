@@ -1,31 +1,21 @@
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWSTASHSTATE=1
-source ~/.bash_aliases
-source ~/git-prompt.sh
-PS1='|\A| '$Red'($(~/.rvm/bin/rvm-prompt))'$Color_Off'\n \w/'$Cyan'$(__git_ps1 " (%s)")'$Color_Off' \$ '
-PATH=/Users/daveryack/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:$PATH # Add RVM to PATH for scripting
-alias vi='vim -O'
-alias ls='ls -G'
-alias cls=clear
-alias ssh2admin='TERM=xterm ssh -l dryack admin-1.prod.urbanairship.com'
-alias ll='ls -la'
-alias ssh='TERM=xterm ssh -l dryack'
-alias cd...='cd ../..'
-alias cd....='cd ../../..'
-alias cd.....='cd ../../../..'
-alias cd......='cd ../../../../..'
-alias ssh='prep.sh'
-alias 2kad='/usr/bin/ssh -l dryack -R 23053:localhost:23053 boyd.blegh.net'
-alias 2wait-wtf='/usr/bin/ssh -l w80 -R 23053:localhost:23053 wait-wtf.com'
-export HOMEBREW_GITHUB_API_TOKEN=5797cdf376cf9417b080465fd707950ca06177d1
-export PIP_REQUIRE_VIRTUALENV=true
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-alias irssi='TERM=screen-256color irssi'
-syspip(){
-  PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
-mac2unix() { 
-  sed 's/\r/\n/gi' 
-}
+BASHD="$HOME/.bash.d"
+[[ -d "$BASHD" ]] || return 1
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Source core files in .bash.d/ in specific order
+for file in $BASHD/{opts,env,colors,paths,aliases}; do
+    [ -r "$file.sh" ] && [ -f "$file.sh" ] && source "$file.sh"
+done
+
+# Source core dirs in .bash.d/ in a specific order
+for file in $BASHD/{completions,prompt}/*.sh; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+
+#Source the host/ dir last
+#    if [[ -d "$BASHD/host" ]]; then
+#        for file in $BASHD/host/*; do
+#            [ -r "$file" ] && [ -f "$file" ] && source "$file"
+#        done
+#    fi
+
+unset file
