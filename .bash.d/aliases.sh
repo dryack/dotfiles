@@ -20,6 +20,7 @@ alias psg="ps aux | grep "
 if [[ "$OSTYPE" =~ ^linux ]]; then
     alias psk="ps auxf | less"
     alias sudo='sudo ' # allow aliases to be sudoed
+    alias diskreport='omreport storage pdisk controller=0'
 fi
 alias vi='vim -O'
 alias ls='ls -G'
