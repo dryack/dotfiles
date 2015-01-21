@@ -33,4 +33,4 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 else
     alias ssh='TERM=xterm ssh -A'
 fi
-
+alias grep='grep --color=always'
