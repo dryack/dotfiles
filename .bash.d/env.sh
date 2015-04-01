@@ -18,4 +18,6 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     export HOMEBREW_GITHUB_API_TOKEN=5797cdf376cf9417b080465fd707950ca06177d1
     #export PIP_REQUIRE_VIRTUALENV=true
     export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+    export CPPFLAGS="-I/usr/local/opt/qt5/include"
+    export LDFLAGS="-L/usr/local/opt/qt5/lib"
 fi
