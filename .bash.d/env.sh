@@ -12,6 +12,7 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
 fi
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
+    eval $(ssh-agent)
     GIT_PS1_SHOWDIRTYSTATE=1
     GIT_PS1_SHOWSTASHSTATE=1
     export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
