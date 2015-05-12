@@ -21,7 +21,7 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     alias psk="ps auxf | less"
     alias sudo='sudo ' # allow aliases to be sudoed
     alias diskreport='omreport storage pdisk controller=0'
-    if [[ "$HOSTNAME" == s0001]]; then
+    if [[ "$HOSTNAME" == s0001 ]]; then
         alias clusto="/mnt/services/clusto/bin/clusto"
     fi
 fi
