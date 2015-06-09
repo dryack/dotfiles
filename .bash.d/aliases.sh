@@ -9,6 +9,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+alias check_json='python -m json.tool'
 
 # cmd shortcuts
 
