@@ -7,6 +7,10 @@ fi
 #if [[ "$OSTYPE" =~ ^linux ]]; then
 #fi
 
+# pick up clusto where applicable
+if [[ `hostname` =~ s0001 ]]; then
+    PATH=$PATH:/mnt/services/clusto/bin
+fi
 
 PATH=$PATH:$HOME:$HOME/bin
 
