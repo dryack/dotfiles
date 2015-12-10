@@ -73,4 +73,5 @@ autocmd BufNewFile,BufRead *.io setlocal ft=io
 " Racket/Scheme
 autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 softtabstop=2 shiftwidth=2 ft=scheme
 
-
+" pretty print json 
+map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
