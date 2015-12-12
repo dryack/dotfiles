@@ -35,6 +35,19 @@ set formatoptions=croqn2
 set lbr
 set nojoinspaces
 
+function! PasteAwareStatusline()
+    let default = "%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P"
+    if &paste
+        return "%#ErrorMsg#" . default . "%*"
+    endif
+    return default
+endfunction
+set statusline=%!PasteAwareStatusline()
+
+" paste/nopaste toggle
+nmap <Leader>p :set paste!<CR>
+
+
 " Ruby and related
 autocmd BufNewFile,BufRead Gemfile,Vagrantfile setlocal filetype=ruby
 autocmd BufNewFile,BufRead *.tt,*.citrus setlocal filetype=treetop
