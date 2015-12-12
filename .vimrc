@@ -18,7 +18,7 @@ set nosmartindent         " set smart indentation off - it fucks up Python
 set smarttab
 set expandtab
 set textwidth=79
-set cursorline
+
 set ruler               " show the cursor position all the time
 set expandtab           " expand tabs to spaces
 set shiftwidth=4        " default width of the smart tab
@@ -34,22 +34,6 @@ set matchtime=2         " but faster
 set formatoptions=croqn2
 set lbr
 set nojoinspaces
-
-" Custom leader
-"let mapleader=" "
-
-function! PasteAwareStatusline()
-    let default = "%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P"
-    if &paste
-        return "%#ErrorMsg#" . default . "%*"
-    endif
-    return default
-endfunction
-set statusline=%!PasteAwareStatusline()
-
-" paste/nopaste toggle
-nmap <Leader>p :set paste!<CR>
-
 
 " Ruby and related
 autocmd BufNewFile,BufRead Gemfile,Vagrantfile setlocal filetype=ruby
@@ -89,4 +73,5 @@ autocmd BufNewFile,BufRead *.io setlocal ft=io
 " Racket/Scheme
 autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 softtabstop=2 shiftwidth=2 ft=scheme
 
+" pretty print json 
 map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
