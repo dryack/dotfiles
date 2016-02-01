@@ -2,7 +2,7 @@
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     PATH=$PATH:~/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:/usr/local/opt/qt5/bin:/usr/local/opt/go/libexec/bin:$PATH
-    $GOPATH:~/projects:~/projects/drac-kvm
+    GOPATH=~/projects:~/projects/drac-kvm
 fi
 
 #if [[ "$OSTYPE" =~ ^linux ]]; then
@@ -14,6 +14,6 @@ if [[ `hostname` =~ s0001 ]]; then
 fi
 
 PATH=$PATH:$HOME:$HOME/bin
-export $GOPATH
+export GOPATH
 export PATH
 export CDPATH
