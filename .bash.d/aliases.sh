@@ -32,6 +32,7 @@ alias ll='ls -la'
 #alias ssh='TERM=xterm ssh -l dryack'
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     alias ssh='prep.sh'
+    alias fixkh='~/fixkh.sh' # automatically delete old entries from known_hosts
     alias afk="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
     alias flushdns="dnscacheutil -flushcache && killall -HUP mDNSResponder"
 else
