@@ -5,4 +5,6 @@ infocmp screen-256color | /usr/bin/ssh ${TARGET} "cat - > screen-256color && tic
 rsync -vuzq ~/.vimrc dryack@${TARGET}:~/
 rsync -vuzq ~/.bashrc dryack@${TARGET}:~/
 rsync -vurzq ~/.bash.d dryack@${TARGET}:~/
+rsync -vurzq ~/.bash_profile dryack@${TARGET}:~/
+#/usr/bin/ssh ${TARGET} "source .bash_profile"
 /usr/bin/ssh -A ${TARGET}
