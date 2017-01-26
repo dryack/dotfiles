@@ -21,4 +21,6 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
     export CPPFLAGS="-I/usr/local/opt/qt5/include"
     export LDFLAGS="-L/usr/local/opt/qt5/lib"
+    GPG_TTY=$(tty)
+    export GPG_TTY
 fi
