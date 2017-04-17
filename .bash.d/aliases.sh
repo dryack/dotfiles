@@ -19,6 +19,7 @@ alias findf="find . -type f -iname "
 alias findd="find . -type d -iname "
 alias psg="ps aux | grep "
 if [[ "$OSTYPE" =~ ^linux ]]; then
+    alias tailf='tail -f --retry '
     alias psk="ps auxf | less"
     alias sudo='sudo ' # allow aliases to be sudoed
     alias diskreport='omreport storage pdisk controller=0'
