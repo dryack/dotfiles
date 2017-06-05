@@ -16,7 +16,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     GIT_PS1_SHOWDIRTYSTATE=1
     GIT_PS1_SHOWSTASHSTATE=1
     export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-    export HOMEBREW_GITHUB_API_TOKEN=cb0552b27c177332e1c984ebd74bfa24aca946b5
+    export HOMEBREW_GITHUB_API_TOKEN=79a4a291d02bbd6fbe417d6dc28a677b44484f94
     #export PIP_REQUIRE_VIRTUALENV=true
     export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
     # for servo especially
