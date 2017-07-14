@@ -14,7 +14,9 @@ alias check_json='python -m json.tool'
 # cmd shortcuts
 
 alias cls=clear
+# candidate for blkbx
 alias 2wait-wtf='/usr/bin/ssh -l w80 -R 23053:localhost:23053 wait-wtf.com'
+
 alias findf="find . -type f -iname "
 alias findd="find . -type d -iname "
 alias psg="ps aux | grep "

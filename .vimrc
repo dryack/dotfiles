@@ -18,6 +18,7 @@ set nosmartindent         " set smart indentation off - it fucks up Python
 set smarttab
 set expandtab
 set textwidth=79
+set cursorline
 
 set ruler               " show the cursor position all the time
 set expandtab           " expand tabs to spaces
