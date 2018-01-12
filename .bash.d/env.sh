@@ -15,6 +15,8 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     eval $(ssh-agent)
     GIT_PS1_SHOWDIRTYSTATE=1
     GIT_PS1_SHOWSTASHSTATE=1
+    # golang
+    export PATH="$PATH:$HOME/go/bin"
     # candidate for blkbx
     export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
     # candidate for blkbx
