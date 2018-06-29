@@ -13,3 +13,4 @@ then
      ln -sf $SSH_AUTH_SOCK $SOCK
      export SSH_AUTH_SOCK=$SOCK
 fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

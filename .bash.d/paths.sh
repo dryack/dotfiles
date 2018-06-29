@@ -5,8 +5,9 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     GOPATH=~/projects/go
 fi
 
-#if [[ "$OSTYPE" =~ ^linux ]]; then
-#fi
+if [[ "$OSTYPE" =~ ^linux ]]; then
+    PATH=$PATH:~/.rvm/bin
+fi
 
 # pick up clusto where applicable
 if [[ `hostname` =~ s0001 ]]; then
