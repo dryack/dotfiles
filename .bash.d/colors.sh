@@ -34,3 +34,5 @@ PS_On_Cyan='\e[46m'        # Cyan
 PS_On_White='\e[47m'       # White
 # Reset
 PS_NC="\e[m"               # None
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
