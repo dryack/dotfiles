@@ -35,4 +35,11 @@ PS_On_White='\e[47m'       # White
 # Reset
 PS_NC="\e[m"               # None
 
-LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+if [[ "$OSTYPE" =~ ^linux ]]; then
+    LS_COLORS='di=$PS_Purple:'
+fi
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    LSCOLORS="gefxcxdxbxegedabagacad"
+    export LSCOLORS
+fi

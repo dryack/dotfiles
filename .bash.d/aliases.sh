@@ -30,6 +30,12 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     fi
 fi
 alias vi='vim -O'
+
+# ls junk
+#export LS_OPTIONS='--color=auto'
+#alias ls='ls -G $LS_OPTIONS'
+#alias ll='ls -la $LS_OPTIONS'
+
 alias ls='ls -G'
 alias ll='ls -la'
 #alias ssh='TERM=xterm ssh -l dryack'
