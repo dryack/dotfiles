@@ -1,10 +1,20 @@
 "set nu
 syntax on
 syntax sync fromstart
-set background=dark
-set t_Co=256
+
+"set t_Co=256           " use 256 colors
+set termguicolors       " use 24 bit color
+
+" older schemes
 "colorscheme delek
-colorscheme ingretu
+"colorscheme ingretu
+
+colorscheme palenight
+set background=dark
+"override horrible non-black background jfc how can people live with that shit?
+highlight Normal guibg=black guifg=white 
+
+
 
 set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
@@ -44,6 +54,9 @@ function! PasteAwareStatusline()
     return default
 endfunction
 set statusline=%!PasteAwareStatusline()
+
+let g:lightline = { 'colorscheme': 'palenight' }
+let g:palenight_terminal_italics=1
 
 " paste/nopaste toggle
 nmap <Leader>p :set paste!<CR>

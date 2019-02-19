@@ -30,13 +30,19 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     fi
 fi
 alias vi='vim -O'
+
+# ls junk
+#export LS_OPTIONS='--color=auto'
+#alias ls='ls -G $LS_OPTIONS'
+#alias ll='ls -la $LS_OPTIONS'
+
 alias ls='ls -G'
 alias ll='ls -la'
 #alias ssh='TERM=xterm ssh -l dryack'
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     alias ssh='prep.sh'
     alias fixkh='~/fixkh.sh' # automatically delete old entries from known_hosts
-    alias afk="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+    alias afk="open /System/Library/CoreServices/ScreenSaverEngine.app"
     alias flushdns="dnscacheutil -flushcache && killall -HUP mDNSResponder"
 else
     alias ssh='TERM=xterm ssh -A'
