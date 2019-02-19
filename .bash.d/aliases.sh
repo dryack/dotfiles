@@ -21,10 +21,12 @@ alias findf="find . -type f -iname "
 alias findd="find . -type d -iname "
 alias psg="ps aux | grep "
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    alias tailf='tail -f --retry '
+    alias tailf='tail -F --retry '
     alias psk="ps auxf | less"
     alias sudo='sudo ' # allow aliases to be sudoed
     alias diskreport='omreport storage pdisk controller=0'
+    alias ls='ls --color=auto -F'
+    alias ll='ls -lah'
     if [[ "$HOSTNAME" == s0001 ]]; then
         alias clusto="/mnt/services/clusto/bin/clusto"
     fi
@@ -36,13 +38,13 @@ alias vi='vim -O'
 #alias ls='ls -G $LS_OPTIONS'
 #alias ll='ls -la $LS_OPTIONS'
 
-alias ls='ls -G'
-alias ll='ls -la'
 #alias ssh='TERM=xterm ssh -l dryack'
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     alias ssh='prep.sh'
     alias fixkh='~/fixkh.sh' # automatically delete old entries from known_hosts
     alias afk="open /System/Library/CoreServices/ScreenSaverEngine.app"
+    alias ls='ls -G'
+    alias ll='ls -la'
     alias flushdns="dnscacheutil -flushcache && killall -HUP mDNSResponder"
 else
     alias ssh='TERM=xterm ssh -A'

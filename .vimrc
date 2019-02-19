@@ -3,14 +3,16 @@ syntax on
 syntax sync fromstart
 
 "set t_Co=256           " use 256 colors
-set termguicolors       " use 24 bit color
+"set termguicolors       " use 24 bit color
 
-" older schemes
+"older schemes
 "colorscheme delek
 "colorscheme ingretu
 
-colorscheme palenight
 set background=dark
+"colorscheme palenight
+colorscheme vividchalk
+
 "override horrible non-black background jfc how can people live with that shit?
 highlight Normal guibg=black guifg=white 
 
@@ -55,8 +57,8 @@ function! PasteAwareStatusline()
 endfunction
 set statusline=%!PasteAwareStatusline()
 
-let g:lightline = { 'colorscheme': 'palenight' }
-let g:palenight_terminal_italics=1
+"let g:lightline = { 'colorscheme': 'palenight' }
+"let g:palenight_terminal_italics=1
 
 " paste/nopaste toggle
 nmap <Leader>p :set paste!<CR>

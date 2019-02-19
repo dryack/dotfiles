@@ -36,7 +36,7 @@ PS_On_White='\e[47m'       # White
 PS_NC="\e[m"               # None
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    LS_COLORS='di=$PS_Purple:'
+    LS_COLORS="di=1"
 fi
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
