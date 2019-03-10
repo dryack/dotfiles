@@ -4,6 +4,10 @@ shopt -s cdable_vars
 shopt -s cdspell
 shopt -s checkwinsize
 
+if [[ "OSTYPE" =~ ^linux ]]; then
+    shopt -s extglob
+fi
+
 
 # History
 
