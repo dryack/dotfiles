@@ -5,7 +5,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    PATH=$PATH:$HOME/.rvm/bin:$HOME/.cargo/bin:$home/w80/.rvm/gems/ruby-2.4.1/bin:/usr/local/bin
+    PATH=$PATH:$HOME/.rvm/bin:$HOME/.cargo/bin:$home/w80/.rvm/gems/ruby-2.4.1/bin
 fi
 
 # pick up clusto where applicable
