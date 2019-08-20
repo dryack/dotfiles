@@ -1,7 +1,7 @@
 # Paths
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-    PATH=$PATH:~/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:/usr/local/opt/qt5/bin:/usr/local/opt/go/libexec/bin:~/.cargo/bin:/usr/local/go/bin:~/.rvm/gems/ruby-2.4.1/bin:$PATH:/Users/dave.ryack/Downloads/google-cloud-sdk/bin/
+    PATH=$PATH:~/.rvm/bin:/usr/local/opt/ruby193/bin:/usr/local/lib/python2.7/site-packages:/usr/local/opt/qt5/bin:/usr/local/opt/go/libexec/bin:~/.cargo/bin:/usr/local/go/bin:~/.rvm/gems/ruby-2.4.1/bin:$PATH:/Users/dave.ryack/Downloads/google-cloud-sdk/bin/:~/bin/
 fi
 
 if [[ "$OSTYPE" =~ ^linux ]]; then

@@ -104,3 +104,9 @@ autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 softtabstop=2 shiftwidth=2 f
 
 " pretty print json 
 map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
+
+" plugins init
+call plug#begin()
+
+" plugins init end
+call plug#end()
