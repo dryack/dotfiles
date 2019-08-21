@@ -4,3 +4,4 @@
 /keyrings/live/secring.gpg
 /AIRSHIP.html
 /.bash.d/secrets-aliases.sh
+/.bash.d/secrets-env.sh
