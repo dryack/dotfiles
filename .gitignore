@@ -3,3 +3,4 @@
 /keyrings/live/pubring.kbx~
 /keyrings/live/secring.gpg
 /AIRSHIP.html
+/.bash.d/secrets-aliases.sh
