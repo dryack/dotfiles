@@ -6,6 +6,7 @@ rsync -vuzq -e ssh ~/.vimrc dryack@${TARGET}:~/
 rsync -vuzq -e ssh ~/.bashrc dryack@${TARGET}:~/
 rsync -vurzq -e ssh ~/.bash.d dryack@${TARGET}:~/
 rsync -vurzq -e ssh ~/.bash_profile dryack@${TARGET}:~/
-rsync -vurzq -e ssh 
+rsync -vurzq -e ssh ~/.tmux.conf dryack@${TARGET}:~/
+rsync -vurzq -e ssh ~/.vim dryack@${TARGET}:~/
 #/usr/bin/ssh ${TARGET} "source .bash_profile"
 /usr/bin/ssh -A ${TARGET}
