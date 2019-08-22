@@ -10,6 +10,6 @@ rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.tmux.conf dryack@${TARGET}:~
 rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.vim dryack@${TARGET}:~/
 rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.ssh/id_ecdsa dryack@${TARGET}:~/
 rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.ssh/blurb_git dryack@${TARGET}:~/
-rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.ssh/dryack_git dryack@${TARGET}:~/
+rsync -vurzq -e "ssh -i \"$HOME/.ssh/id_ecdsa\"" ~/.ssh/git_dryack dryack@${TARGET}:~/
 #/usr/bin/ssh ${TARGET} "source .bash_profile"
 /usr/bin/ssh -A ${TARGET}
