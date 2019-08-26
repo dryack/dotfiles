@@ -27,9 +27,9 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     alias diskreport='omreport storage pdisk controller=0'
     alias ls='ls --color=auto -F'
     alias ll='ls -lah'
-    if [[ "$HOSTNAME" == s0001 ]]; then
-        alias clusto="/mnt/services/clusto/bin/clusto"
-    fi
+    #if [[ "$HOSTNAME" == s0001 ]]; then
+    #    alias clusto="/mnt/services/clusto/bin/clusto"
+    #fi
 fi
 alias vi='vim -O'
 
