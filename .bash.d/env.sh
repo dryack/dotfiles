@@ -45,8 +45,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     export PATH="$PATH:$HOME/go/bin"
     # candidate for blkbx
     export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-    # candidate for blkbx
-    export HOMEBREW_GITHUB_API_TOKEN=79a4a291d02bbd6fbe417d6dc28a677b44484f94
+
     #export PIP_REQUIRE_VIRTUALENV=true
     export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
     # candidate for blkbx
