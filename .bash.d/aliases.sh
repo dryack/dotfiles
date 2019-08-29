@@ -18,7 +18,7 @@ alias cls=clear
 
 alias findf="find . -type f -iname "
 alias findd="find . -type d -iname "
-alias psg="ps aux | grep "
+alias psg="ps aux | grep -i "
 if [[ "$OSTYPE" =~ ^linux ]]; then
     alias youtubea='youtube-dl --extract-audio --audio-format mp3 '
     alias tailf='tail -F --retry '
