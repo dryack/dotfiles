@@ -49,7 +49,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     # rt.rb stuff
     alias rt='rt -t ~'
     alias rtc='rt --list tasks.check_mk'
-    alias tbl='rt --list tasks.longterm'
+    alias rtl='rt --list tasks.longterm'
 else
     alias ssh='TERM=xterm ssh -A'
 fi
