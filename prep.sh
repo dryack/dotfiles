@@ -2,7 +2,7 @@
 # TODO: Add target to .ssh/config
 TARGET=$1
 # enter pwd 1x even during first login
-cat ~/.ssh/authorized_keys | /usr/bin/ssh -i ${HOME}/.ssh/id_ecdsa ${TARGET} "cat - > .ssh/authorized_keys"
+cat ~/.ssh/authorized_keys | /usr/bin/ssh -i ${HOME}/.ssh/id_ecdsa ${TARGET} "mkdir ~/.ssh;cat - > ~/.ssh/authorized_keys"
 # i no longer remember why this is here - but i *do* remember agonizing over
 # the problem it solves
 infocmp screen-256color | /usr/bin/ssh -i ${HOME}/.ssh/id_ecdsa ${TARGET} "cat - > screen-256color && tic screen-256color && rm screen-256color;mkdir -p .bash.d"
