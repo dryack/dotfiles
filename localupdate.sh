@@ -12,6 +12,7 @@ cp ~/projects/dryack/dotfiles/.bash_profile ~
 cp ~/projects/dryack/dotfiles/prep.sh ~/scripts
 cp ~/projects/dryack/dotfiles/prep.sh ~/bin
 cp ~/projects/dryack/dotfiles/tipsfile.txt ~
+cp ~/projects/dryack/dotfiles/localupdate.sh ~/scripts
 blackbox_edit_end .bash.d/secrets-env.sh
 blackbox_edit_end .bash.d/secrets-aliases.sh
 blackbox_edit_end AIRSHIP.html
