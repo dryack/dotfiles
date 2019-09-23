@@ -39,8 +39,8 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     eval $(ssh-agent)
     GIT_PS1_SHOWDIRTYSTATE=1
     GIT_PS1_SHOWSTASHSTATE=1
-    # mopidy
-    export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages:$PYTHONPATH
+    # ddgr
+    export BROWSER=w3m
     # golang
     export PATH="$PATH:$HOME/go/bin"
     # candidate for blkbx
