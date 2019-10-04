@@ -47,7 +47,8 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     alias afk="open /System/Library/CoreServices/ScreenSaverEngine.app"
     alias ls='ls -G'
     alias ll='ls -la'
-    alias flushdns="dnscacheutil -flushcache && killall -HUP mDNSResponder"#
+    alias flushdn="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+    #alias flushdns="dnscacheutil -flushcache && killall -HUP mDNSResponder"#
     # rt.rb stuff
     alias rt='rt -t ~'
     alias rtc='rt --list tasks.check_mk'
