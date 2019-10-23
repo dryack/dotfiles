@@ -17,6 +17,9 @@ colorscheme vividchalk
 highlight Normal guibg=black guifg=white 
 
 
+" Store all swap files in a single directory
+" thanks kad!
+set directory^=$HOME/.vim/tmp//
 
 set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
