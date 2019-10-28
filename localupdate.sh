@@ -13,4 +13,4 @@ cp ~/projects/dryack/dotfiles/prep.sh ~/scripts
 cp ~/projects/dryack/dotfiles/prep.sh ~/bin
 cp ~/projects/dryack/dotfiles/localupdate.sh ~/scripts
 cd -
-echo "Remember to copy ~/scripts/* to ~/bin/""
+echo "Remember to copy ~/scripts/* to ~/bin/"
