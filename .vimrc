@@ -15,7 +15,8 @@ colorscheme vividchalk
 
 "override horrible non-black background jfc how can people live with that shit?
 highlight Normal guibg=black guifg=white 
-
+"simple underline (or under-squiggle - if available) for spell errors
+hi SpellBad cterm=underline ctermfg=NONE
 
 " Store all swap files in a single directory
 " thanks kad!
