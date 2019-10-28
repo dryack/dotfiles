@@ -7,6 +7,7 @@ blackbox_cat tipsfile.txt.gpg > ~/projects/dryack/dotfiles/tipsfile.txt
 cp -R ~/projects/dryack/dotfiles/.bash.d/ ~/.bash.d
 cp ~/projects/dryack/dotfiles/fixkh.sh ~/scripts
 cp ~/projects/dryack/dotfiles/.bashrc ~
+cp ~/projects/dryack/dotfiles/.vimrc ~
 cp ~/projects/dryack/dotfiles/.bash_profile ~
 cp ~/projects/dryack/dotfiles/prep.sh ~/scripts
 cp ~/projects/dryack/dotfiles/prep.sh ~/bin
