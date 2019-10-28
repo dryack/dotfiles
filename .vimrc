@@ -10,13 +10,18 @@ syntax sync fromstart
 "colorscheme ingretu
 
 set background=dark
-"colorscheme palenight
-colorscheme vividchalk
+
 
 "override horrible non-black background jfc how can people live with that shit?
 highlight Normal guibg=black guifg=white 
 "simple underline (or under-squiggle - if available) for spell errors
-hi SpellBad cterm=underline ctermfg=NONE
+augroup SpellUnderline
+    autocmd!
+    autocmd ColorScheme * hi SpellBad cterm=underline ctermfg=NONE ctermbg=NONE
+augroup END
+
+"colorscheme palenight
+colorscheme vividchalk
 
 " Store all swap files in a single directory
 " thanks kad!
