@@ -22,6 +22,7 @@ alias psg="ps aux | grep -i "
 alias 2dryack="prep.sh slc-master-dryack01"
 
 
+
 if [[ "$OSTYPE" =~ ^linux ]]; then
     alias youtubea='youtube-dl --extract-audio --audio-format mp3 '
     alias tailf='tail -F --retry '
@@ -30,6 +31,7 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     alias diskreport='omreport storage pdisk controller=0'
     alias ls='ls --color=auto -F'
     alias ll='ls -lah'
+    alias dux='du -x --max-depth=1'
     #if [[ "$HOSTNAME" == s0001 ]]; then
     #    alias clusto="/mnt/services/clusto/bin/clusto"
     #fi
