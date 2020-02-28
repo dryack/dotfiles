@@ -35,6 +35,9 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
     #if [[ "$HOSTNAME" == s0001 ]]; then
     #    alias clusto="/mnt/services/clusto/bin/clusto"
     #fi
+    if [[ `hostname` == slc-test-centos8-dryack.test.blurb.com ]]; then
+        alias kubectl='microk8s.kubectl'
+    fi
 fi
 
 # ls junk
