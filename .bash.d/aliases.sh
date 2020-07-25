@@ -21,13 +21,14 @@ alias findf="find . -type f -iname "
 alias findd="find . -type d -iname "
 alias psg="ps aux | grep "
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    alias youtubea='youtube-dl --extract-audio --audio-format mp3 '
+    alias youtubea='youtube-dl --no-playlist --extract-audio --audio-format mp3 '
     alias tailf='tail -F --retry '
     alias psk="ps auxf | less"
     alias sudo='sudo ' # allow aliases to be sudoed
     alias diskreport='omreport storage pdisk controller=0'
-    alias ls='ls --color=auto -F'
-    alias ll='ls -lah'
+    alias ls='exa -a '
+    alias ll='exa -lah '
+    alias cat='bat --style header '
     if [[ "$HOSTNAME" == s0001 ]]; then
         alias clusto="/mnt/services/clusto/bin/clusto"
     fi

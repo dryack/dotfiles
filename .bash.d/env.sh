@@ -6,15 +6,17 @@ export LANG="en_US.UTF-8"
 export LC_CALL="en_US.UTF-8"
 export TERM=xterm-256color
 export PROMPT_COMMAND='history -a'
+export GPG_TTY=$(tty)
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
-    PS1HOST='$(hostname)'
+    export EXA_COLORS="da=36"
+    export PS1HOST='$(hostname)'
 fi
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     eval $(ssh-agent)
-    GIT_PS1_SHOWDIRTYSTATE=1
-    GIT_PS1_SHOWSTASHSTATE=1
     # golang
     export PATH="$PATH:$HOME/go/bin"
     # candidate for blkbx
@@ -31,6 +33,4 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
     ####
     export CPPFLAGS="-I/usr/local/opt/qt5/include"
     export LDFLAGS="-L/usr/local/opt/qt5/lib"
-    GPG_TTY=$(tty)
-    export GPG_TTY
 fi
