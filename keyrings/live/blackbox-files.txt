@@ -1,1 +1,4 @@
+.bash.d/secrets-aliases.sh
+.bash.d/secrets-env.sh
 AIRSHIP.html
+tipsfile.txt

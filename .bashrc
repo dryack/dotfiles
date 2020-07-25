@@ -2,7 +2,7 @@ BASHD="$HOME/.bash.d"
 [[ -d "$BASHD" ]] || return 1
 
 # Source core files in .bash.d/ in specific order
-for file in $BASHD/{functs,opts,env,colors,paths,aliases,cmds}; do
+for file in $BASHD/{functs,opts,env,secrets-env,colors,paths,aliases,secrets-aliases,cmds}; do
     [ -r "$file.sh" ] && [ -f "$file.sh" ] && source "$file.sh"
 done
 

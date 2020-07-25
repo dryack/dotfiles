@@ -10,13 +10,22 @@ syntax sync fromstart
 "colorscheme ingretu
 
 set background=dark
-"colorscheme palenight
-colorscheme vividchalk
+
 
 "override horrible non-black background jfc how can people live with that shit?
 highlight Normal guibg=black guifg=white 
+"simple underline (or under-squiggle - if available) for spell errors
+augroup SpellUnderline
+    autocmd!
+    autocmd ColorScheme * hi SpellBad cterm=underline ctermfg=NONE ctermbg=NONE
+augroup END
 
+"colorscheme palenight
+colorscheme vividchalk
 
+" Store all swap files in a single directory
+" thanks kad!
+set directory^=$HOME/.vim/tmp//
 
 set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
@@ -104,3 +113,9 @@ autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 softtabstop=2 shiftwidth=2 f
 
 " pretty print json 
 map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
+
+" plugins init
+call plug#begin()
+
+" plugins init end
+call plug#end()
