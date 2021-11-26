@@ -123,3 +123,19 @@ Usage: mynewscript SCRIPT_NAME.ext\n"
 	# Edit the script
 	$EDITOR "$filename"
 }
+encrypt () 
+{ 
+    if [ -f $1 ]; then
+        gpg2 -o $1.encrypted --cipher-algo aes256 --symmetric $1;
+    else
+        echo "file not found: '$1'";
+    fi
+}
+decrypt ()
+{
+  if [ -f $1 ]; then
+    gpg2 --decrypt $1;
+  else
+    echo "file not found: '$1'";
+  fi
+}
